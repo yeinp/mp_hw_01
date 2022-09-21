@@ -38,21 +38,9 @@ public class MainActivity extends AppCompatActivity {
         numArray[1]=(RadioButton)findViewById(R.id.twelve);
         img=(ImageView)findViewById(R.id.img);
 
-        numArray[0].setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            public void onCheckedChanged(CompoundButton arg0, boolean arg1) {
-                    radioGroup.setVisibility(android.view.View.VISIBLE);
-                    img.setVisibility(android.view.View.VISIBLE);
-            }
-        });
-
-        numArray[1].setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            public void onCheckedChanged(CompoundButton arg0, boolean arg1) {
-                    radioGroup.setVisibility(android.view.View.VISIBLE);
-                    img.setVisibility(android.view.View.VISIBLE);
-            }
-        });
-
         final int draw[]={R.drawable.r,R.drawable.s};
+
+        img.setImageResource(R.drawable.s);
 
         for(int i=0;i<numArray.length;i++){
             final int index=i;
